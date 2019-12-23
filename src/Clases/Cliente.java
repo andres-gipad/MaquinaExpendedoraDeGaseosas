@@ -6,6 +6,10 @@ public class Cliente {
     private int dinero;
     private Gaseosa gaseosa;
 
+    public Cliente(Gaseosa gaseosa) {
+        this.gaseosa = gaseosa;
+    }
+
     public Cliente(int dinero) {
         this.dinero = dinero;
     }
@@ -36,9 +40,6 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "Cliente{" +
-                "dinero=" + dinero +
-                ", gaseosa=" + gaseosa +
-                '}';
+        return "Lata de " + gaseosa;
     }
 }
